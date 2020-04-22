@@ -13,7 +13,7 @@ import lombok.ToString;
 @ToString
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CustomerAccounst {
+public class CrudCustomerAccounst {
 
 	/**
 	 * account number client.

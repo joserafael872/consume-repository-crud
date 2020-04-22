@@ -1,13 +1,13 @@
 package com.crud.customer.service;
 
-import com.crud.customer.request.CustomerData;
-import com.crud.customer.request.CustomerName;
-import com.crud.customer.response.CustomerResponse;
+import com.crud.customer.request.CrudCustomerData;
+import com.crud.customer.request.CrudCustomerName;
+import com.crud.customer.response.CrudCustomerResponse;
 
 public interface CrudService {
 	
-	void insertDataFromCustomer (CustomerData customerData);
+	void insertDataFromCustomer (CrudCustomerData customerData);
 	
-	CustomerResponse getDataFromCustomerByName(CustomerName customerName);
+	CrudCustomerResponse getDataFromCustomerByName(CrudCustomerName customerName);
 
 }

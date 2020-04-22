@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crud.customer.request.CustomerData;
-import com.crud.customer.request.CustomerName;
-import com.crud.customer.response.CustomerResponse;
+import com.crud.customer.request.CrudCustomerData;
+import com.crud.customer.request.CrudCustomerName;
+import com.crud.customer.response.CrudCustomerResponse;
 import com.crud.customer.service.CrudService;
 
 @CrossOrigin
@@ -25,7 +25,7 @@ public class CrudCustomerController {
 	private CrudService service;
 	
 	@PostMapping("${controller.insert-data}")
-	public ResponseEntity<String> insertDataCustomer(@RequestBody CustomerData customerData){
+	public ResponseEntity<String> insertDataCustomer(@RequestBody CrudCustomerData customerData){
 		
 		service.insertDataFromCustomer(customerData);
 		
@@ -33,7 +33,7 @@ public class CrudCustomerController {
 	}
 	
 	@PostMapping("${controller.get-data}")
-	public CustomerResponse getDataCustomer(@RequestBody CustomerName customerName){
+	public CrudCustomerResponse getDataCustomer(@RequestBody CrudCustomerName customerName){
 		
 		return service.getDataFromCustomerByName(customerName);		
 	}

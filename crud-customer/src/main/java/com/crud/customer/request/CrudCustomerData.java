@@ -14,7 +14,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CustomerData {
+public class CrudCustomerData {
 
 	/**
 	 * client name.

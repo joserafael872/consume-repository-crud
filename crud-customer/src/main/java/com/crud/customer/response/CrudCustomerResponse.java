@@ -15,7 +15,7 @@ import lombok.ToString;
 @ToString
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CustomerResponse {
+public class CrudCustomerResponse {
 
 	/**
 	 * client name.
@@ -44,6 +44,6 @@ public class CustomerResponse {
 	/**
 	 * customer accounts.
 	 */
-	private List<CustomerAccounst> cuentas;
+	private List<CrudCustomerAccounst> cuentas;
 	
 }
